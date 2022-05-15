@@ -10,7 +10,7 @@ def main():
     coming_token = ComingToken.deploy(
         initial_supply,
         {"from": account},
-        # publish_source=config["networks"][network.show_active()].get("verify", False),
+        publish_source=config["networks"][network.show_active()].get("verify", False),
     )
     print(
         "Newly deployed token: "
